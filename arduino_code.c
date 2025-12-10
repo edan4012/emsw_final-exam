@@ -6,6 +6,7 @@
 #define BT_TXD 1
 
 #define MQ2pin A0
+
 DHT dht(8, DHT11);
 SoftwareSerial bluetooth(0, 1);
   
@@ -16,6 +17,8 @@ void setup() {
   dht.begin();
   pinMode(9, OUTPUT);
   pinMode(10, OUTPUT);
+  digitalWrite(9, LOW);
+  digitalWrite(10, LOW);
 }
 
 
