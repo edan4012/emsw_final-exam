@@ -73,7 +73,6 @@ void loop() {
   Serial.print(h);
   Serial.print("%;");
   Serial.print(g);
-  Serial.print(";");
-  Serial.println(on_off);
+  Serial.println();
   delay(1000);
 }
